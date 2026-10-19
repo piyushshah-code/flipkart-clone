@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Clone</title>
+    <title>Flipkart Clone - Online Shopping Site for Mobiles, Fashion, Electronics &amp; More</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,13 +14,12 @@
     <header>
         <div class="navbar">
             <div class="nav-logo">
-                <div class="logo">
-                
-                 </div>
+                <a href="https://www.flipkart.com" target="_blank" rel="noopener" class="logo" aria-label="Flipkart"></a>
             </div>
 
             <div class="nav-search">
-                <select class="search-select">
+                <div class="search-icon-left"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <select class="search-select" aria-label="Category">
                     <option> All  </option>
                     <option> Electronics</option>
                     <option> Appliances</option>
@@ -25,64 +27,86 @@
                     <option> Fashion</option>
                     <option> Groceries</option>
                 </select>
-                <input placeholder="Search For Products, Brands & More" class="search-input">
+                <input placeholder="Search For Products, Brands & More" class="search-input" type="text">
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-             <div class="nav-login"> 
-                <div class="box_"> </div>
-              <i class="fa-solid fa-circle-user"></i> 
-            Login
+             <div class="nav-login">
+                <a href="https://www.flipkart.com/account/login" target="_blank" rel="noopener" class="nav-link">
+                    <div class="box_"> </div>
+                    <i class="fa-regular fa-circle-user"></i>
+                    Login <i class="fa-solid fa-chevron-down chev"></i>
+                </a>
+                <div class="dropdown login-dropdown">
+                    <div class="dd-head">
+                        <span>New customer?</span>
+                        <a href="https://www.flipkart.com/account/login?signup=true" target="_blank" rel="noopener">Sign Up</a>
+                    </div>
+                    <a href="https://www.flipkart.com/account/?rd=0&link=home_account" target="_blank" rel="noopener"><i class="fa-regular fa-circle-user"></i> My Profile</a>
+                    <a href="https://www.flipkart.com/plus" target="_blank" rel="noopener"><i class="fa-solid fa-circle-plus"></i> Flipkart Plus Zone</a>
+                    <a href="https://www.flipkart.com/account/orders?link=home_orders" target="_blank" rel="noopener"><i class="fa-solid fa-box-open"></i> Orders</a>
+                    <a href="https://www.flipkart.com/wishlist?link=home_wishlist" target="_blank" rel="noopener"><i class="fa-regular fa-heart"></i> Wishlist</a>
+                    <a href="https://seller.flipkart.com/sell-online" target="_blank" rel="noopener"><i class="fa-solid fa-store"></i> Become a Seller</a>
+                    <a href="https://www.flipkart.com/rewards?link=home_rewards" target="_blank" rel="noopener"><i class="fa-solid fa-ticket"></i> Rewards</a>
+                    <a href="https://www.flipkart.com/gift-cards-store" target="_blank" rel="noopener"><i class="fa-solid fa-gift"></i> Gift Cards</a>
+                    <a href="https://www.flipkart.com/helpcentre" target="_blank" rel="noopener"><i class="fa-solid fa-headset"></i> Customer Care</a>
+                </div>
             </div>
 
-            <div class="nav-cart">
+            <a class="nav-cart" href="https://www.flipkart.com/viewcart" target="_blank" rel="noopener">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Cart
-            </div>
+            </a>
 
-            <div class="nav-seller">
+            <a class="nav-seller" href="https://seller.flipkart.com/sell-online" target="_blank" rel="noopener">
                 <i class="fa-solid fa-store"></i>
-                
-            </div>
+                Become a Seller
+            </a>
 
-            <div class="nav-menu">
+            <div class="nav-menu" tabindex="0">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="dropdown menu-dropdown">
+                    <a href="https://www.flipkart.com/communication-preferences/notification" target="_blank" rel="noopener"><i class="fa-solid fa-bell"></i> Notification Preferences</a>
+                    <a href="https://www.flipkart.com/helpcentre" target="_blank" rel="noopener"><i class="fa-solid fa-headset"></i> 24x7 Customer Care</a>
+                    <a href="https://www.flipkart.com/advertise" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-trend-up"></i> Advertise</a>
+                    <a href="https://www.flipkart.com/mobile-apps" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i> Download App</a>
+                </div>
             </div>
          </div>
          
          <div class="panel">
             <div class="box1"> </div>
-            <p class="box1_txt"> Kilos </p>
+            <a href="https://www.flipkart.com/grocery-supermart-store" target="_blank" rel="noopener" class="panel-link"><p class="box1_txt">Kilos</p></a>
 
             <div class="box2"> </div>
-            <p class="box2.txt"> Mobiles </p>
+            <a href="https://www.flipkart.com/mobile-phones-store" target="_blank" rel="noopener" class="panel-link"><p class="box2_txt">Mobiles</p></a>
 
             <div class="box3"></div>
-            <p class="box3_txt"> Fashion </p>
+            <a href="https://www.flipkart.com/clothing-and-accessories" target="_blank" rel="noopener" class="panel-link"><p class="box3_txt">Fashion</p></a>
 
             <div class="box4"></div>
-            <p class="box4_txt"> Electronics </p>
+            <a href="https://www.flipkart.com/electronics-store" target="_blank" rel="noopener" class="panel-link"><p class="box4_txt">Electronics</p></a>
 
             <div class="box5"></div>
-            <p class="box5_txt"> Home & Furniture </p>
+            <a href="https://www.flipkart.com/furniture-store" target="_blank" rel="noopener" class="panel-link"><p class="box5_txt">Home & Furniture</p></a>
 
             <div class="box6"></div>
-            <p class="box6_txt"> Appliances </p>
+            <a href="https://www.flipkart.com/home-appliances-store" target="_blank" rel="noopener" class="panel-link"><p class="box6_txt">Appliances</p></a>
 
             <div class="box7"></div>
-            <p class="box7_txt"> Flights </p>
+            <a href="https://www.flipkart.com/travel/flights" target="_blank" rel="noopener" class="panel-link"><p class="box7_txt">Flights</p></a>
 
             <div class="box8"></div>
-            <p class="box8_txt"> Beauty, Toys & More </p>
+            <a href="https://www.flipkart.com/beauty-and-grooming" target="_blank" rel="noopener" class="panel-link"><p class="box8_txt">Beauty, Toys & More</p></a>
 
             <div class="box9"></div>
-            <p class="box9_txt"> Two Wheelers </p>
+            <a href="https://www.flipkart.com/automotive-store" target="_blank" rel="noopener" class="panel-link"><p class="box9_txt">Two Wheelers</p></a>
 
          </div>
 
     </header>
-    <div class="hero_section"></div>
+    <a href="https://www.flipkart.com/mobile-phones-store" target="_blank" rel="noopener" class="hero_link"><div class="hero_section"></div></a>
 
     <div class="hero_electronics">
           
@@ -91,40 +115,35 @@
         </div> -->
 
         <div class="first_box"> 
-           <a href="#"> 
-            <div class="shaver_image"></div>
+           <a href="https://www.flipkart.com/shavers-store" target="_blank" rel="noopener">            <div class="shaver_image"></div>
             <p> Best of Shavers </p>
             <h4> From Rs 1649 </h4>
            </a>
         </div>
 
         <div class="second_box">
-           <a href="#"> 
-            <div class="speaker_image"></div>
+           <a href="https://www.flipkart.com/speakers-store" target="_blank" rel="noopener">            <div class="speaker_image"></div>
             <p> Best Selling Speakers </p>
             <h4> Grab Now </h4>
            </a>    
         </div>
 
         <div class="third_box">
-           <a href="#"> 
-            <div class="monitor_image"></div>
+           <a href="https://www.flipkart.com/monitors-store" target="_blank" rel="noopener">            <div class="monitor_image"></div>
             <p> Monitors </p>
             <h4> Starting From Rs 6599 </h4>
            </a>
         </div>
 
         <div class="fourth_box">
-           <a href="#"> 
-            <div class="printers_image"></div>
+           <a href="https://www.flipkart.com/printers-store" target="_blank" rel="noopener">            <div class="printers_image"></div>
             <p> Printers </p>
             <h4> Starting From Rs 2336 </h4>
            </a>
         </div>
 
         <div class="fifth_box">
-           <a href="#"> 
-             <div class="sonic_image"> </div>
+           <a href="https://www.flipkart.com/monitors-store" target="_blank" rel="noopener">             <div class="sonic_image"> </div>
                 <p> Sonic Monitors </p>
                 <h4> From Rs 8000 </h4>
            </a>
@@ -137,28 +156,28 @@
             <div class="box_content">
                 <h2> Best in Laptops </h2>
                 <div class="laptop_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/laptops-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div>
         </div>
         <div class="fashion box"> 
             <div class="box_content">
                 <h2> Best in Fashion </h2>
                 <div class="fashion_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/clothing-and-accessories" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div>
         </div>
         <div class="appliances box"> 
             <div class="box_content">
                 <h2> Best in Appliances </h2>
                 <div class="appliances_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/home-appliances-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div> 
         </div>
         <div class="furniture box"> 
             <div class="box_content">
                 <h2> Best in Furniture </h2>
                 <div class="furniture_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/furniture-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div> 
         </div>
 
@@ -166,71 +185,71 @@
             <div class="box_content">
                 <h2> Best in Wireless Tech </h2>
                 <div class="tech_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/audio-video-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div>
         </div>
         <div class="toys box"> 
             <div class="box_content">
                 <h2> Best in Toys </h2>
                 <div class="toys_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/toys-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div>
         </div>
         <div class="fitness box"> 
             <div class="box_content">
                 <h2> Best in Fitness </h2>
                 <div class="fitness_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/sports-fitness-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div> 
         </div>
         <div class="footwear box"> 
             <div class="box_content">
                 <h2> Best in Footwear </h2>
                 <div class="footwear_image"> </div>
-                <a href="#">  <p> Shop Now </p> </a>
+                <a href="https://www.flipkart.com/footwear-store" target="_blank" rel="noopener">  <p> Shop Now </p> </a>
             </div> 
         </div>
         
     </div>
-     <div class="hero_second"></div>
+     <a href="https://www.flipkart.com/travel/flights" target="_blank" rel="noopener" class="hero_link"><div class="hero_second"></div></a>
      <footer>
         <div class="foot-panel">
             <ul>
                 <p> About </p>
-                <a href="#"> Contact Us</a>
-                <a href="#"> About Us </a>
-                <a href="#"> Careers </a>
-                <a href="#"> Flipkart Stories </a>
-                <a href="#"> Press </a>
-                <a href="#"> Corporate Information </a>
+                <a href="https://www.flipkart.com/helpcentre" target="_blank" rel="noopener">Contact Us</a>
+                <a href="https://www.flipkart.com/about-us" target="_blank" rel="noopener">About Us</a>
+                <a href="https://www.flipkartcareers.com/" target="_blank" rel="noopener">Careers</a>
+                <a href="https://stories.flipkart.com/" target="_blank" rel="noopener">Flipkart Stories</a>
+                <a href="https://www.flipkart.com/press" target="_blank" rel="noopener">Press</a>
+                <a href="https://www.flipkart.com/corporate-information" target="_blank" rel="noopener">Corporate Information</a>
 
                 
             </ul>
 
             <ul>
                 <p> Group Companies </p>
-                <a href="#"> Myntra </a>
-                <a href="#"> Cleartrip </a>
-                <a href="#"> Shopsy </a>
+                <a href="https://www.myntra.com" target="_blank" rel="noopener">Myntra</a>
+                <a href="https://www.cleartrip.com" target="_blank" rel="noopener">Cleartrip</a>
+                <a href="https://www.shopsy.in" target="_blank" rel="noopener">Shopsy</a>
             </ul>
 
             <ul>
                 <p> Help </p>
-                <a href="#"> Payments </a>
-                <a href="#"> Shipping </a>
-                <a href="#"> Cancellation & Returns </a>
-                <a href="#"> FAQ </a>
+                <a href="https://www.flipkart.com/pages/payments" target="_blank" rel="noopener">Payments</a>
+                <a href="https://www.flipkart.com/pages/shipping" target="_blank" rel="noopener">Shipping</a>
+                <a href="https://www.flipkart.com/pages/returns" target="_blank" rel="noopener">Cancellation & Returns</a>
+                <a href="https://www.flipkart.com/pages/faq" target="_blank" rel="noopener">FAQ</a>
             </ul>
 
             <ul>
                 <p> Consumer Policy </p>
-                <a href="#"> Cancellations & Returns </a>
-                <a href="#"> Terms of Use </a>
-                <a href="#"> Security </a>
-                <a href="#"> Privacy </a>
-                <a href="#"> Sitemap </a>
-                <a href="#"> Grievance & Redressal </a>
-                <a href="#"> EPR Compilance </a>
+                <a href="https://www.flipkart.com/pages/returnpolicy" target="_blank" rel="noopener">Cancellations & Returns</a>
+                <a href="https://www.flipkart.com/pages/terms" target="_blank" rel="noopener">Terms of Use</a>
+                <a href="https://www.flipkart.com/pages/paymentsecurity" target="_blank" rel="noopener">Security</a>
+                <a href="https://www.flipkart.com/pages/privacypolicy" target="_blank" rel="noopener">Privacy</a>
+                <a href="https://www.flipkart.com/sitemap" target="_blank" rel="noopener">Sitemap</a>
+                <a href="https://www.flipkart.com/pages/grievance-redressal-policy" target="_blank" rel="noopener">Grievance & Redressal</a>
+                <a href="https://www.flipkart.com/pages/ewaste-compliance-tnc" target="_blank" rel="noopener">EPR Compilance</a>
             </ul>
 
             <ul class="add">
@@ -255,34 +274,31 @@
                    <p> Banglore,560103, </p>
                    <p> Karnataka, India </p>
                    <p> CIN : U51109KA2012PTCO66107 </p>
-                   <p> Telephone : </p> <a href="#"> 044-45614700 </a>
+                   <p> Telephone : </p> <a href="tel:04445614700"> 044-45614700 </a>
                 </span>
             </ul>
 
             <ul class="social">
                 <p class="media1">Socials : </p>
                 <span class="address"> 
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-x-twitter"></i>
-                  <i class="fa-brands fa-youtube"></i>
-                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.facebook.com/flipkart" target="_blank" rel="noopener" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://twitter.com/flipkart" target="_blank" rel="noopener" aria-label="x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="https://www.youtube.com/flipkart" target="_blank" rel="noopener" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="https://www.instagram.com/flipkart" target="_blank" rel="noopener" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
                 </span>
             </ul>
         </div>
 
         <div class="foot-panel2">
-            <div class="store"> <i class="fa-solid fa-store"></i> Become a Seller </div>
-            <div class="star">  <i class="fa-solid fa-star"></i> Advertise </div>
-            <div class="gift">  <i class="fa-solid fa-gift"></i> Gift </div>
-            <div class="question"> <i class="fa-solid fa-question"></i> Help </div>
+            <a class="store" href="https://seller.flipkart.com/sell-online" target="_blank" rel="noopener"> <i class="fa-solid fa-store"></i> Become a Seller </a>
+            <a class="star" href="https://www.flipkart.com/advertise" target="_blank" rel="noopener">  <i class="fa-solid fa-star"></i> Advertise </a>
+            <a class="gift" href="https://www.flipkart.com/gift-cards-store" target="_blank" rel="noopener">  <i class="fa-solid fa-gift"></i> Gift </a>
+            <a class="question" href="https://www.flipkart.com/helpcentre" target="_blank" rel="noopener"> <i class="fa-solid fa-question"></i> Help </a>
             <div class="final_image"> 
-                <img src="images/final.svg"> 
+                <img src="images/final.svg" alt="Payment methods"> 
             </div>
         </div>
     </footer>
 
-       
-        
-       
-
-       
+</body>
+</html>
